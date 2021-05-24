@@ -21,7 +21,7 @@ type entry struct {
 }
 
 type Value interface {
-	Len() int64
+	Len() int
 }
 
 func NewCache(maxBytes int64, onEvicted func(key string, value Value)) *Cache {
